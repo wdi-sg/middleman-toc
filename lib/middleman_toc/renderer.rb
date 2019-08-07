@@ -7,7 +7,7 @@ module MiddlemanToc
         children
       else
         html = node.title
-        html = link("/#{node.path}.html", html)
+        html = link("/ruby-for-beginners/#{node.path}.html", html)
         html = [html, children].join("\n") if node.directory?
         item(html)
       end
