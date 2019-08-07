@@ -4,7 +4,7 @@ require 'middleman_toc/title'
 module MiddlemanToc
   class Builder < Struct.new(:manifest, :pages)
     def build
-      Node.new(0, nil, nil, nodes(manifest))
+      Node.new(0, 'ruby-for-beginners', nil, nodes(manifest))
     end
 
     private
